@@ -10,6 +10,8 @@
     <div class="aside__text">{{ userData.sites }}</div>
     <p class="aside__title">IP:</p>
     <div class="aside__text">{{ userData.ip }}</div>
+    <p class="aside__title">City:</p>
+    <div class="aside__text">{{ userData.city }}</div>
   </aside>
 </template>
 

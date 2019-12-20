@@ -39,8 +39,6 @@
     methods: {
       buttonAuthfunction() {
         this.$store.state.authIsOk = !this.$store.state.authIsOk;
-        // eslint-disable-next-line no-console
-        console.log(this.$store.state.authIsOk);
       },
       toTop(event){
         if(event.target.value !== '') {

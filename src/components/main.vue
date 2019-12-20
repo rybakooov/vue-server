@@ -27,6 +27,7 @@ export default {
         id: '1234312',
         sites: 20,
         ip: null,
+        city: null
       }
     }
   },
@@ -35,8 +36,10 @@ export default {
   },
   mounted() {
     axios.get('https://json.geoiplookup.io/')
-    // eslint-disable-next-line no-console
-      .then(result => {console.log('success:', result); this.userData.ip = result.data.ip;})
+      .then(result => {
+        this.userData.ip = result.data.ip;
+        this.userData.city = result.data.city;
+      })
   }
 }
 

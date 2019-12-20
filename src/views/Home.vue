@@ -40,10 +40,18 @@ export default {
 
 
 <style lang="scss" scoped>
+  *{
+    box-sizing: border-box;
+  }
   .home{
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     flex: 1;
+    h1{
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
     &-wrap{
+      padding: 0 10px;
       display: flex;
       flex-wrap: wrap;
       box-sizing: border-box;
